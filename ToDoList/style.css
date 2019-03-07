@@ -1,0 +1,152 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(88, 31, 31);
+}
+#main{
+    background-color:rgb(170, 205, 240);
+    width:80%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+h1{
+    width:40%;
+    margin: 0 auto;
+    padding: 20px;
+    color:rgb(88, 31, 31);
+    font-size:4em;
+}
+span.datum {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-size:0.4em;
+    color:rgb(88, 31, 31);
+    padding-left: 40px;
+}
+#myInput{
+    max-width:30%;
+    height: 30px;
+    margin-left: 50px;
+    padding-left: 20px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    background-color:#ddd;
+    margin-right: 80px;
+}
+#button{
+    max-width: 140px;
+    height:40px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    font-size: 1.2em;
+    padding:6px 12px;
+}
+#button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 3px rgba(121, 117, 121, 0.74);
+}
+#button:active{
+    border: 2px solid black;
+}
+ul {
+    width:60%;
+    margin:0 auto;
+    padding-top:50px;
+    list-style-type: decimal;
+} 
+ul :nth-child(even) {
+    background-color: rgb(88, 31, 31);
+    color:yellow;
+    padding: 10px;
+}
+ul :nth-child(odd) {
+    background-color:gold;
+    
+}
+ul li {
+    padding:10px;
+    border-radius: 10px;
+    font-size: 2em;
+    margin: 10px 0;
+}
+ul li:hover {
+    -webkit-box-shadow: 2px 2px 5px 5px rgba(121, 117, 121, 0.74);
+    -moz-box-shadow: 2px 2px 5px 5px rgba(121, 117, 121, 0.74);
+    box-shadow: 2px 2px 5px 5px rgba(121, 117, 121, 0.74);
+
+}
+ul li.checked {
+    text-decoration: line-through;
+    color:red;
+    background-color:yellow;
+}
+
+span.close {
+    cursor: pointer;
+    float: right;
+    padding:0 12px;
+    background-color: inherit;
+}
+
+@media (max-width:600px){
+   
+   #main{
+       width:90%;
+       margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+   } 
+
+   h1{
+    width:60%;
+    margin: 0 auto;
+    padding: 5px;
+    color:rgb(88, 31, 31);
+    font-size:2.4em;
+   }
+   span.datum {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size:0.6em;
+    color:rgb(88, 31, 31);
+}
+#myInput{
+    max-width:100%;
+    height: 30px;
+    margin-left: 35px;
+    padding-left: 10px;
+    
+}
+#button{
+    display: none;
+}
+ul {
+    width:75%;
+    padding-inline-start: 10px;
+    padding-top: 15px;
+} 
+ul :nth-child(even) {
+    padding: 5px;
+}
+ul li {
+    padding:5px;
+    border-radius: 10px;
+    font-size: 1.4em;
+    margin: 5px 0;
+}
+
+}
+@media (max-width:380px){
+    #myInput{
+        max-width:70%;
+    }
+    span.datum { 
+        width: 80%;
+        font-size:0.4em;
+    }
+}
